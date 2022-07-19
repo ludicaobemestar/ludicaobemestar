@@ -1,0 +1,191 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Chelsea Market';
+    src: url('/fonts/chelsea-market/ChelseaMarket-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 16px;
+    /* outline: 3px lime; */
+}
+
+body{
+    background-color: #9C77B8;
+    font-family: 'Lato', sans-serif;;
+}
+
+h1{
+    font-family: 'Chelsea Market';
+    font-weight: 400;
+    font-size: 1.9rem;
+    line-height: 2rem;
+    color: #502E6E;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+header{
+    width: 950px;
+    height: 100px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+header img{
+    width: 96px;
+    display: block;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.2rem;
+}
+
+header nav a, a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #41314C;
+    background-color:#FBFBFB;
+    font-weight: 700;
+    border: 1px solid #3F3F40;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+div.main{
+    width: 950px;
+    height: 900vh;
+    margin: auto;
+    background-color: #FBFBFB;
+    border: 1px solid #353535;
+    border-radius: 5px;
+}
+
+main{
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+    padding: 64px 40px;
+    border-radius: 5px;
+    display:flex;
+    position: relative;
+}
+
+main article h1.main-title{
+    width: 592px;
+    font-family: 'Chelsea Market';
+    font-weight: 400;
+    font-size: 3.1rem;
+    line-height: 3.5rem;
+    color: #3F3F40;
+    position: relative;
+}
+
+main article h1::after{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    left:0;
+    width: 600px;
+    height: 2px;
+    background-color: #502e6e21;
+}
+
+main article p.subtitle{
+    margin-top: 62px;
+    margin-bottom: 20px;
+    color: #502E6E80;
+    font-weight: bold;
+}
+
+main article p.subtitle ~ p{
+    width: 495px;
+    color: #545454;
+}
+
+main div{
+    height:372px;
+    position: absolute;
+    right:40px;
+    top:189px;
+}
+
+main img{
+    display: block;
+    height: 100%;
+}
+
+/* QUEM SOMOS */
+
+section{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 40px 40px;
+}
+#quem-somos div.sobre{
+    width: 100%;
+    height: fit-content;
+    display: block;
+    border:3px solid green;
+}
+
+#quem-somos article{
+    width: 100%;
+    height: fit-content;
+}
+
+#quem-somos article header{
+    width: fit-content;
+    margin-left: 0;
+}
+
+article header div.img-redonda{
+    width: 96px;
+    height: 96px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+article header h1{
+    text-align: left;
+    margin-left: 20px;
+}
+
+#quem-somos article p{
+    width: 635px;
+    margin-bottom: 20px;
+}
+
+#quem-somos article span.em{
+    font-weight: 600;
+    font-size: 1.1rem;
+    color:#9C77B8;
+
+}
+
+#quem-somos article ul li{
+    list-style-position: inside;
+    line-height: 1.3rem;
+}
+
+#quem-somos  a{
+    display: inline-block;
+    margin-top: 40px;
+
+}
